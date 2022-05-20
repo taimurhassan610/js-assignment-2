@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task 01 and 02
+    <h1>Input</h1>
+    <input type="text" id="inp1">
+    <input type="text" id="inp2">
+    <button onclick="res()">submit</button>
+    <h3 id="su"></h3>
+    <h3 id="su1"></h3>
+    <h3 id="su2"></h3>
+    <h3 id="su3"></h3>
+    <h3 id="su4"></h3>
+    <script>
+        function res(){
+        let a = document.querySelector("#inp1").value
+        let b = document.querySelector("#inp2").value
+        let result=document.querySelector("#su")
+        let result1=document.querySelector("#su1")
+        let result2=document.querySelector("#su2")
+        let result3=document.querySelector("#su3")
+        let result4=document.querySelector("#su4")
+
+        result.innerHTML=("SUM= "+(Number(a)+Number(b)))
+        result1.innerHTML=("Subtract= "+(Number(a)-Number(b)))
+        result2.innerHTML=("Multiple= "+Number(a)*Number(b))
+        result3.innerHTML=("Divide= "+Number(a)/Number(b))
+        result4.innerHTML=("Modulus="+Number(a)%Number(b))
+     }
+    </script>
+
+
+
+    Task 03
+    <h3>Enter a variable</h3>
+    <input type="text" id="inp1">
+    <button onclick="res()">submit</button>
+    <h3 id="su"></h3>
+    <h3 id="su1"></h3>
+    <h3 id="su2"></h3>
+    <h3 id="su3"></h3>
+    <h3 id="su4"></h3>
+    <script>
+       function res(){
+        let a = document.querySelector("#inp1").value
+        let result=document.querySelector("#su")
+        let result1=document.querySelector("#su1")
+        let result2=document.querySelector("#su2")
+        let result3=document.querySelector("#su3")
+        let result4=document.querySelector("#su4")
+        d=Number(a)
+        result.innerHTML=("Initial Value "+d)
+        result1.innerHTML=("Value after increment= "+(++d))
+        result2.innerHTML=("Value after addition is= "+(++d+6))
+        result3.innerHTML=("Value after decrement is= "+(--d))
+        result4.innerHTML=("The remainder is="+d%3)
+       }
+    </script>
+
+
+    Task 04
+    <h2>calculate</h2>
+    <input type="text" id="inp">
+    <button onclick="fer()">Calculate</button>
+    <h2 id="res"></h2>
+    <script>
+        function fer(){
+            let a = document.querySelector("#inp").value
+            let result=document.querySelector("#res")
+            result.innerHTML=("Total cost to buy "+a+" tickets to a movie is "+(Number(a)*600)+"PKR")
+        }
+    </script>
+
+    Task 05
+    <h2>calculate</h2>
+    <input type="text" id="inp">
+    <button onclick="fer()">Calculate</button>
+    <h2 id="res"></h2>
+    <script>
+        
+        function fer(){
+            let a = document.querySelector("#inp").value
+            let result=document.querySelector("#res")
+            for(let i=1;i=10;i++)
+            {
+                document.write(a+"x"+i+"="+Number(a)*Number(i))
+            }
+        }
+    </script>
+
+
+
+
+    Task 6
+    <input type="text"id="inp1">
+    <h5 id="disp1"></h5>
+    <input type="text" id="inp2">
+    <h5 id="disp2"></h5>
+    <button onclick="res()">Submit</button>
+    <script>
+        function res()
+        {
+            let a=document.querySelector("#inp1").value
+            let result=document.querySelector("#disp1")
+            result.innerHTML=(Number(a)+"C is "+((Number(a)*9/5)+32+"F"))
+             a=document.querySelector("#inp2").value
+             result=document.querySelector("#disp2")
+            result.innerHTML=(Number(a)+"F is "+((Number(a)-32)*5/9)+"F")
+            
+        }
+    </script>
+
+
+    Task 7
+    <h1>Shopping Cart</h1>
+    <h5 id="dis"></h5>
+    <script>
+        let a=650
+        let b=3
+        let c=100
+        let d=7
+        let e=100
+        result=document.querySelector("#dis")
+        document.write("\n Price of item 1 is "+a+"<br> Quantity of item 1 is "+b+"<br> Price of item 2 is "+c+"<br> Quantity of item 2 is "+d+"<br> Shipping Charges "+e+"<br> Total cost of your order is "+((a*b)+(c*d)+e))
+        </script>
+
+
+        Task 8
+ <h1>Shopping Cart</h1>
+ <h5 id="dis"></h5>
+ <script>
+     let a=980
+     let b=804
+     document.write("\n Total marks: "+a+"<br> Marks obtained: "+b+"<br> Percentage: "+b/a*100)
+     </script>
+     
+     
+     Task 9
+     <h1>Total Currency in PKR</h1>
+ <h5 id="dis"></h5>
+ <script>
+     let a=104.80
+     let b=28
+     document.write("\n Total currency in pkr: "+(10*a+25*b))
+     </script> 
+
+     Task 10
+
+     <h1 id="dis"> Calculator</h1>
+     <script>
+     let a=5
+     document.write("\n Total: "+(((a+5)*10)/2))
+     </script>
+
+
+
+
+    Task 11
+    <h2>Age Calculator</h2>
+    <script>
+        var year = prompt("Enter the year of Birth: ");
+        var now  = 2022;
+        var age  = now - year;
+        document.writeln("Current Year: " , now , "<br\>")
+        document.writeln("Birth Year: " , year , "<br\>")
+        document.writeln("You are " + age + " or " + (age - 1) + " Years Old. <br\>" );
+    </script>
+
+    Task 12
+    <h2>The Geometrizer</h2>
+        <script>
+        var radius=prompt("Radius: ",0);
+        var pi=3.142;
+        var circumference=2*pi*radius;
+        var area=pi*radius*radius;
+        document.writeln("Radius of a Circle: " , radius ,"<br/>")
+        document.writeln("Circumference of a Circle: " , circumference ,"<br/>")
+        document.writeln("Area of a Circle: " , area ,"<br/>")
+    </script>
+
+    Task 13
+    <h2>The Life Time Supply Calculator</h2>
+    <script>
+        document.write("The Life Time Supply Calculator <br\> <br\>")
+        var snack= prompt("Enter your Favourite Snack: ");
+        var age = prompt("Enter your Age: ");
+        var maxAge = 65;
+        var amountOfSnack = prompt("Enter Amount of Snack Per Day: ");
+        var totalNeeded = (amountOfSnack * 365) * (maxAge - age);
+        var message = 'You will need ' + totalNeeded +" " + snack + ' to last you until the ripe old age of ' + maxAge;
+        document.writeln("Favourite Snack: "+snack + "<br\>");
+        document.writeln("Current Age: "+age + "<br\>");
+        document.writeln("Estimated Maximum Age: "+maxAge + "<br\>");
+        document.writeln("Amount of Snack Per Day: "+amountOfSnack + "<br\>");
+        document.writeln(message);
+    </script>
+
+    </body>
+</html>
